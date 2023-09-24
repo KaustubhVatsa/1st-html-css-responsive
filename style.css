@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    background: #f2f2f2;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #333;
+    width: 100%;
+    z-index: 100;
+
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 1900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.navbar{
+    justify-content: space-between;
+}
+.nav-links{
+    gap: 20px;
+    list-style: none;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 20px 0;
+    display: inline-block;
+    transition: 0.4s;
+}
+.nav-links{
+    gap: 20px;
+    list-style: none;
+}
+.navbar a:hover{
+    color: #ddd;
+}
+
+
+/* homepage */
+.homepage{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("home-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.homepage::before{
+    content: '';
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0.0, 0.2);
+}
+.homepage .content {
+    position: relative;
+    height: 85%;
+    flex-direction: column;
+    justify-content: center;
+}
+.homepage .text{
+    color: #fff;
+    text-align: center;
+}
+.homepage .text h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.homepage a{ 
+    color: #333;
+    border-radius: 5px;
+    transition: 0.3ms;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    background: #fff;
+}
+.homepage a:hover{
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* services section  */
+.services{
+    padding-top: 80px;
+}
+.section-title{
+    text-align: center;
+}
+section h2{
+    font-size: 2rem;
+    
+}
+section .cards{
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section .card{
+    width: calc(100% / 3 - 30px);
+    text-align: center;
+    list-style: none ;
+    background: #fff;
+    padding: 40px 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.04);
+    margin-bottom: 40px;
+}
+section .card img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+}
+section .card{
+    margin-bottom: 20px;
+}
+
