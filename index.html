@@ -12,6 +12,10 @@
     <header>
         <nav class="navbar container flex">
             <h2 class="logo"><a href="#">LOGO</a></h2>
+            <input type="checkbox" id="menu-toggler">
+            <label for="menu-toggler" id="hambtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
             <ul class="nav-links flex">
                 <li><a href="#home">home</a></li>
                 <li><a href="#services">services</a></li>
@@ -161,29 +165,34 @@
     <section class="contact" id="contact us">
         <div class="container">
             <div class="section-title">
-                <h2>About us</h2>
+                <h2>Contact Info</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, cumque illum consectetur vitae qui repudiandae inventore voluptatem hic dicta? Porro eum hic exercitationem minima neque ipsam ipsum, placeat quae cupiditate!</p>
     
             </div>
-        </div>
-        <div class="row flex">
-            <div class="col information">
-                <div class="contact-details">
-                    <p><i class="fas fa-map-marker-alt"></i>Bhubhneshwar ,  KIIT , Odisha </p>
-                    <p><i class="fas fa-phone"></i>(+91)1234567890 </p>
-                    <p><i class="fas fa-envelope"></i>kaustubh26vatsa@gmail.com </p>
+            <div class="row flex">
+                <div class="col information">
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i>Bhubhneshwar ,  KIIT , Odisha </p>
+                        <p><i class="fas fa-phone"></i>(+91)1234567890 </p>
+                        <p><i class="fas fa-envelope"></i>kaustubh26vatsa@gmail.com </p>
+                    </div>
+                </div>
+                <div class="col form">
+                    <form action="#">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="E-mail" required>
+                        <textarea placeholder="Input Message" required></textarea>
+                        <button id="submit" type="submit">Send Message</button>
+                    </form>
                 </div>
             </div>
-            <div class="col form">
-                <form action="#">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="E-mail" required>
-                    <textarea placeholder="Input Message" required></textarea>
-                    <button id="submit" type="submit">Send Message</button>
-                </form>
-            </div>
+        </div>
+        </section>
+    <!-- Contact us end-->
+    <section class="footer">
+        <div class="container">
+            <span></span>
         </div>
     </section>
-    <!-- Contact us end-->
 </body>
 </html>
